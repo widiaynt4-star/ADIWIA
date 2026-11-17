@@ -130,9 +130,11 @@ st.markdown(
         background: rgba(255,255,255,.07);
     }}
     /* sembunyikan bulatan radio */
-    [data-testid="stSidebar"] div[role="radiogroup"] > label > div:first-child {{
-        display: none !important;
-    }}
+   [data-testid="stSidebar"] div[role="radiogroup"] > label > div:first-child,
+[data-testid="stSidebar"] div[role="radiogroup"] > label > span:first-child,
+[data-testid="stSidebar"] div[role="radiogroup"] input[type="radio"] {{
+    display: none !important;
+}}
     /* kotak ikon */
     [data-testid="stSidebar"] div[role="radiogroup"] > label::before {{
         content: ""; flex: 0 0 24px; width: 24px; height: 24px;
